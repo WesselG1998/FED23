@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wessel Glansbeek">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>De snelste en meest complete voetbalwebsite</title>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+        <!-- <button>menu</button> -->
+        <img class="c-header__img" src="images/hamburger_menu.svg" alt="hamburger menu">
+
+        <a href="./index.html">
+            <svg width="57" height="31" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m37.983 25.606 1.838-10.307c.147 0 .288.003.428 0 .931-.022 1.868.014 2.791-.084.862-.093 1.526-.593 1.943-1.369.759-1.41-.013-2.796-1.611-2.854-1.113-.041-2.229-.004-3.343-.016-.24-.003-.278.134-.309.31-.39 2.252-.776 4.504-1.169 6.754-.662 3.79-1.329 7.578-1.994 11.366-.044.248-.091.495-.139.756H25.312c.088-.523.17-1.03.259-1.536.21-1.179.418-2.358.638-3.535.041-.224.114-.445.203-.654 2.956-6.93 5.916-13.857 8.874-20.784a.85.85 0 0 0 .09-.442c-.07.111-.144.219-.207.332-2.608 4.642-5.212 9.286-7.821 13.927-2.343 4.166-4.69 8.33-7.032 12.496-.1.179-.19.294-.432.293-4.434-.009-8.868-.006-13.301-.007-.072 0-.144-.007-.263-.013L0 .272h.444c3.67 0 7.854.004 11.524-.01 0 0-.009-.022.052.287.97 4.792 1.96 9.757 2.943 14.546l1.204 5.864c.024.116.055.232.085.357h.616c-.096-.536-.186-1.052-.28-1.566-.178-.961-.341-1.93-.504-2.893a.811.811 0 0 1 .065-.504C19.041 11.083 21.942 5.82 24.836.55c.115-.21.247-.283.484-.283C32.127.273 38.936.233 45.743.29c2.712.023 5.227.798 7.313 2.646 1.713 1.519 2.72 3.444 3.145 5.67 1.164 6.089-2.177 12.7-8.264 15.528-1.801.837-3.694 1.365-5.68 1.458-1.41.066-2.826.013-4.274.013Z"
+                    fill="#FFF" fill-rule="evenodd" />
+            </svg>
+        </a>
+        <svg width="30" height="30" class="c-header__profile" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M843.282963 870.115556c-8.438519-140.515556-104.296296-257.422222-233.908148-297.14963C687.881481 536.272593 742.4 456.533333 742.4 364.088889c0-127.241481-103.158519-230.4-230.4-230.4S281.6 236.847407 281.6 364.088889c0 92.444444 54.518519 172.183704 133.12 208.877037-129.611852 39.727407-225.46963 156.634074-233.908148 297.14963-0.663704 10.903704 7.964444 20.195556 18.962963 20.195556l0 0c9.955556 0 18.299259-7.774815 18.962963-17.73037C227.745185 718.506667 355.65037 596.385185 512 596.385185s284.254815 122.121481 293.357037 276.195556c0.568889 9.955556 8.912593 17.73037 18.962963 17.73037C835.318519 890.311111 843.946667 881.019259 843.282963 870.115556zM319.525926 364.088889c0-106.287407 86.186667-192.474074 192.474074-192.474074s192.474074 86.186667 192.474074 192.474074c0 106.287407-86.186667 192.474074-192.474074 192.474074S319.525926 470.376296 319.525926 364.088889z" />
+        </svg>
+        
+        <!-- <button>Mijn VP</button> -->
+        <nav class=" c-header__nav height">
+            <img class="c-header__img" src="images/close.svg" alt="hamburger menu">
+            <a href="./index.html">
+                <svg width="57" height="31" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m37.983 25.606 1.838-10.307c.147 0 .288.003.428 0 .931-.022 1.868.014 2.791-.084.862-.093 1.526-.593 1.943-1.369.759-1.41-.013-2.796-1.611-2.854-1.113-.041-2.229-.004-3.343-.016-.24-.003-.278.134-.309.31-.39 2.252-.776 4.504-1.169 6.754-.662 3.79-1.329 7.578-1.994 11.366-.044.248-.091.495-.139.756H25.312c.088-.523.17-1.03.259-1.536.21-1.179.418-2.358.638-3.535.041-.224.114-.445.203-.654 2.956-6.93 5.916-13.857 8.874-20.784a.85.85 0 0 0 .09-.442c-.07.111-.144.219-.207.332-2.608 4.642-5.212 9.286-7.821 13.927-2.343 4.166-4.69 8.33-7.032 12.496-.1.179-.19.294-.432.293-4.434-.009-8.868-.006-13.301-.007-.072 0-.144-.007-.263-.013L0 .272h.444c3.67 0 7.854.004 11.524-.01 0 0-.009-.022.052.287.97 4.792 1.96 9.757 2.943 14.546l1.204 5.864c.024.116.055.232.085.357h.616c-.096-.536-.186-1.052-.28-1.566-.178-.961-.341-1.93-.504-2.893a.811.811 0 0 1 .065-.504C19.041 11.083 21.942 5.82 24.836.55c.115-.21.247-.283.484-.283C32.127.273 38.936.233 45.743.29c2.712.023 5.227.798 7.313 2.646 1.713 1.519 2.72 3.444 3.145 5.67 1.164 6.089-2.177 12.7-8.264 15.528-1.801.837-3.694 1.365-5.68 1.458-1.41.066-2.826.013-4.274.013Z"
+                        fill="#FFF" fill-rule="evenodd" />
+                </svg>
+            </a>
+            <svg width="30" height="30" class="c-header__profile" viewBox="0 0 1024 1024" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M843.282963 870.115556c-8.438519-140.515556-104.296296-257.422222-233.908148-297.14963C687.881481 536.272593 742.4 456.533333 742.4 364.088889c0-127.241481-103.158519-230.4-230.4-230.4S281.6 236.847407 281.6 364.088889c0 92.444444 54.518519 172.183704 133.12 208.877037-129.611852 39.727407-225.46963 156.634074-233.908148 297.14963-0.663704 10.903704 7.964444 20.195556 18.962963 20.195556l0 0c9.955556 0 18.299259-7.774815 18.962963-17.73037C227.745185 718.506667 355.65037 596.385185 512 596.385185s284.254815 122.121481 293.357037 276.195556c0.568889 9.955556 8.912593 17.73037 18.962963 17.73037C835.318519 890.311111 843.946667 881.019259 843.282963 870.115556zM319.525926 364.088889c0-106.287407 86.186667-192.474074 192.474074-192.474074s192.474074 86.186667 192.474074 192.474074c0 106.287407-86.186667 192.474074-192.474074 192.474074S319.525926 470.376296 319.525926 364.088889z" />
+            </svg>
+            
+            <ul>
+                <li><input type="search" placeholder="Zoeken"></li>
+                <li><a href="">Nieuws</a></li>
+                <li><a href="">Competities</a></li>
+                <li><a href="">Clubs</a></li>
+                <li><a href="">Transfernieuws</a></li>
+                <li><a href="">Transfergeruchten</a></li>
+                <li><a href="">Wedden</a></li>
+                <li><a href="">Video</a></li>
+                <li><a href="">Eredivisie</a></li>
+                <li><a href="">Ajax</a></li>
+                <li><a href="">Feyenoord</a></li>
+                <li><a href="">PSV</a></li>
+                <li><a href="">Champions League</a></li>
+                <li><a href="">Europa League</a></li>
+                <li><a href="">Premier League</a></li>
+            </ul>
+
+
+        </nav>
+
+
+
+    </header>
+    <main>
+        <aside>
+            <ul class="c-carousel">
+                <li>
+                    <article>
+                        <a href="./detailpagina.html">
+                            <img class="c-carousel__slider" src="images/fotoslider1.jpg" alt="Frank Arnesen">
+                            <div class="c-carousel__content">
+                                <h2>'Van den Boomen overtuigt nog niet'</h2>
+                                <div class="c-reaction"><svg class="c-reaction__svg" width="100%" height="100%"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" class="jsx-e63032a8322e960b ">
+                                        <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                                        <path
+                                            d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                                        </path>
+                                    </svg>
+                                    <p>157 reacties</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="">
+                            <img class="c-carousel__slider" src="images/slider2.jpg" alt="Frank Arnesen">
+                            <div class="c-carousel__content">
+                                <h2>Test titel 02</h2>
+                                <div class="c-reaction"><svg class="c-reaction__svg" width="100%" height="100%"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" class="jsx-e63032a8322e960b ">
+                                        <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                                        <path
+                                            d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                                        </path>
+                                    </svg>
+                                    <p>168 reacties</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </article>
+
+                </li>
+                <li>
+                    <article>
+                        <a href="">
+                            <img class="c-carousel__slider" src="images/slider3.png" alt="Frank Arnesen">
+                            <div class="c-carousel__content">
+                                <h2>Schöne: 'Mij niet afschrijven'</h2>
+                                <div class="c-reaction"><svg class="c-reaction__svg" width="100%" height="100%"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" class="jsx-e63032a8322e960b ">
+                                        <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                                        <path
+                                            d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                                        </path>
+                                    </svg>
+                                    <p>54 reacties</p>
+                                </div>
+                            </div>
+
+                        </a>
+                    </article>
+                </li>
+            </ul>
+
+        </aside>
+
+        <div>
+            <button id="prevBtn">←</button>
+            <button id="nextBtn">→</button>
+
+        </div>
+
+
+        <section class="nieuws">
+            <ul>
+                <li class="title">
+                    <h3>
+                        Vandaag
+                        -
+                        Laatste voetbalnieuws
+                    </h3>
+                </li>
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+                <li>
+                    <img src="images/belgium_flag.svg" alt="Vlag">
+                    <span class="time">14:51</span>
+                    <a class="title"
+                        href="/videos/1159944/eerste-helft-tegen-ajax-nog-slechter-dan-bosz-dacht-dodelijke-cocktail.html"
+                        title="">
+                        <h4 class="">
+                            Koeman met handen in haar:
+                            aanwezigheid topspeler nog altijd onzeker voor Oranje
+                        </h4>
+                    </a>
+                    <a rel="nofollow"
+                        href="/videos/1159942/bosz-kan-zich-niet-vinden-in-kritiek-op-verdediger-te-makkelijk.html#comments_anchor"
+                        class="comments">
+                        <svg fill="#A3A3A5" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M7 9h10v2H7V9Zm0 4h7v2H7v-2Z"></path>
+                            <path
+                                d="M20 4H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2Zm0 14H6.667L4 20V6h16v12Z">
+                            </path>
+                        </svg>
+                        <span>14</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer class="inverted">
+        <svg width="57" height="31" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="m37.983 25.606 1.838-10.307c.147 0 .288.003.428 0 .931-.022 1.868.014 2.791-.084.862-.093 1.526-.593 1.943-1.369.759-1.41-.013-2.796-1.611-2.854-1.113-.041-2.229-.004-3.343-.016-.24-.003-.278.134-.309.31-.39 2.252-.776 4.504-1.169 6.754-.662 3.79-1.329 7.578-1.994 11.366-.044.248-.091.495-.139.756H25.312c.088-.523.17-1.03.259-1.536.21-1.179.418-2.358.638-3.535.041-.224.114-.445.203-.654 2.956-6.93 5.916-13.857 8.874-20.784a.85.85 0 0 0 .09-.442c-.07.111-.144.219-.207.332-2.608 4.642-5.212 9.286-7.821 13.927-2.343 4.166-4.69 8.33-7.032 12.496-.1.179-.19.294-.432.293-4.434-.009-8.868-.006-13.301-.007-.072 0-.144-.007-.263-.013L0 .272h.444c3.67 0 7.854.004 11.524-.01 0 0-.009-.022.052.287.97 4.792 1.96 9.757 2.943 14.546l1.204 5.864c.024.116.055.232.085.357h.616c-.096-.536-.186-1.052-.28-1.566-.178-.961-.341-1.93-.504-2.893a.811.811 0 0 1 .065-.504C19.041 11.083 21.942 5.82 24.836.55c.115-.21.247-.283.484-.283C32.127.273 38.936.233 45.743.29c2.712.023 5.227.798 7.313 2.646 1.713 1.519 2.72 3.444 3.145 5.67 1.164 6.089-2.177 12.7-8.264 15.528-1.801.837-3.694 1.365-5.68 1.458-1.41.066-2.826.013-4.274.013Z"
+                fill="#FFF" fill-rule="evenodd" />
+        </svg>
+
+        <p>
+            <a rel="nofollow" href="/pagina/algemene-voorwaarden">Algemene voorwaarden</a>
+        </p>
+        <p>
+
+            <a rel="nofollow" href="/pagina/privacy-statement">Privacy statement</a>
+        </p>
+
+
+
+
+        <span>
+
+            <p>© 2023 SportsWeb International B.V.</p>
+            <p>Alle rechten voorbehouden.</p>
+        </span>
+
+
+        <div class="social-list">
+            <h3>Social</h3>
+            <a rel="external" href="https://www.facebook.com/voetbalprimeur" target="_blank" class="social">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg fill="#FFFFFF" height="1em" width="1em" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+                    xml:space="preserve">
+                    <g id="XMLID_834_">
+                        <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                    </g>
+                </svg>
+            </a>
+            <a rel="external" href="https://twitter.com/voetbalprimeur" target="_blank" class="twitter social">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg fill="#FFFFFF" height="1em" width="1em" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+                    xml:space="preserve">
+                    <g id="XMLID_834_">
+                        <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                    </g>
+                </svg>
+            </a>
+            <a rel="external" href="https://tiktok.com/@voetbalprimeur" target="_blank" class="tiktok social">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg fill="#FFFFFF" height="1em" width="1em" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+                    xml:space="preserve">
+                    <g id="XMLID_834_">
+                        <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                    </g>
+                </svg>
+            </a>
+            <a rel="external" href="https://www.instagram.com/voetbalprimeur" target="_blank" class="instagram social">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg fill="#FFFFFF" height="1em" width="1em" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+                    xml:space="preserve">
+                    <g id="XMLID_834_">
+                        <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                    </g>
+                </svg>
+            </a>
+            <a rel="external" href="https://youtube.com/channel/UC6z1D0L_T-zONZwMM0mbPzw" target="_blank"
+                class="youtube social">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg fill="#FFFFFF" height="1em" width="1em" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+                    xml:space="preserve">
+                    <g id="XMLID_834_">
+                        <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                    </g>
+                </svg>
+            </a>
+            <a href="/pagina/rss-feeds" target="_blank" class="rss social">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg fill="#FFFFFF" height="1em" width="1em" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310"
+                    xml:space="preserve">
+                    <g id="XMLID_834_">
+                        <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div class="bottom">
+            <div class="part-of wrapper full-width">
+                <h4>
+                    Onderdeel van het <a target="_blank" href="https://www.pxr.nl/"><img loading="lazy"
+                            src="https://vp.cdn.pxr.nl/images/vp/../common/pxr-logo-light.svg" alt="PXR"></a> netwerk
+                </h4>
+                <ul class="labels-logos">
+                    <li><a target="_blank" href="https://www.vi.nl"><img loading="lazy"
+                                src="https://vp.cdn.pxr.nl/images/vp/../vi/logo-light.svg" alt="VI"></a></li>
+                    <li><a target="_blank" href="https://www.gpblog.com/nl"><img loading="lazy"
+                                src="https://vp.cdn.pxr.nl/images/vp/../gp/logo-light-small.svg" alt="GPblog"></a></li>
+                    <li><a target="_blank" href="https://www.voetbalnieuws.nl"><img loading="lazy"
+                                src="https://vp.cdn.pxr.nl/images/vp/../vn/logo-light-small.svg"
+                                alt="Voetbalnieuws"></a></li>
+                    <li><a target="_blank" href="https://www.bright.nl"><img class="long-logo" loading="lazy"
+                                src="https://vp.cdn.pxr.nl/images/vp/../br/logo-light-small.svg" alt="Bright"></a></li>
+                    <li><a target="_blank" href="https://www.babybytes.nl"><img class="long-logo" loading="lazy"
+                                src="https://vp.cdn.pxr.nl/images/vp/../babybytes/logo-light.svg" alt="Babybytes"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
