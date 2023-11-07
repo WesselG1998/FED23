@@ -1,39 +1,26 @@
 // JavaScript Document
+
+// hb menu
 let index = 0;
 
 var clicked = false;
 console.log("hey");
 
-const deMenuButton = document.querySelector("header > img");
+const deMenuButton = document.querySelector("header > a");
 console.log(deMenuButton);
 
 deMenuButton.addEventListener("click", toggleMenu);
 const deNav = document.querySelector("header nav");
 
-const deSluitButton = document.querySelector("header nav > img");
+const deSluitButton = document.querySelector("header nav > a");
 deSluitButton.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   deNav.classList.toggle("open");
 }
 
-// var hamburgerMenu = document.querySelector(".c-header__img");
-// console.log(hamburgerMenu);
 
-/* hamburgerMenu.addEventListener("click", () => {
-  clicked = !clicked;
-
-  if (clicked) {
-    hamburgerMenu.src = "images/close.svg";
-  } else {
-    hamburgerMenu.src = "images/hamburger_menu.svg";
-  }
-
-  var navigatie = document.querySelector(".c-header__nav");
-  navigatie.classList.toggle("d-none");
-  console.log(navigatie);
-}); */
-
+// carousel
 var nextButton = document.querySelector("#nextBtn");
 console.log(nextButton);
 

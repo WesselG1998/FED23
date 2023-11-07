@@ -1,43 +1,59 @@
 /* CSS Document */
+
+/* alle kleuren opgeslagen */
+:root {
+    --main-nav-color: #2C54B1;
+    --grey: #e8e8e8;
+    --footer: #1a1a1f;
+    --font: #1a1a1f;
+    --bg-color: #FFFFFF;
+    --vp-wit: #fefefe;
+
+  }
+/* hier kan je evt de kleuren aanpassen voor een darktheme */
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --main-nav-color: black;
+      }
+    
+  }
+
+
 *,
 *::after,
 *::before {
     box-sizing: border-box;
     margin: 0;
-
-
-
-    /*    [09:31] Marvin Sernee
-
-https://css-tricks.com/simplified-fluid-typography/
-Simplified Fluid Typography | CSS-TricksFluid typography is the idea that font-size (and perhaps other attributes of type, like line-height) change depending on the screen size (or perhaps container queries if we had them).  The core tri...css-tricks.com<https://teams.microsoft.com/l/message/19:b70be0e1b14c4ad5a0d62ea495d01a44@thread.tacv2/1606379516711?tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7&amp;groupId=d8207e28-0682-4700-a57d-3be32d348f17&amp;parentMessageId=1606377937953&amp;teamName=BlokWeb Blok2 J2 CMD20/21&amp;channelName=Klas204&amp;createdTime=1606379516711>*/
-
-    /*    https://www.youtube.com/watch?v=KcdBOoK3Pfw&t=893s&ab_channel=DevEd*/
 }
 
+/* overflow hidden voor carousel slider */
 aside{
     overflow: hidden;
+    margin-bottom: 1em;
 }
 
+/* algemene styling voor de body */
 body {
-    background-color: white;
+    background-color: var(--bg-color);
     margin: 0;
     max-width: 100vw;
     max-height: 100vh;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #1a1a1f;
+    color: var(--font);
     font-family: Lato,Helvetica,Arial,sans-serif;
     overflow-x: hidden;
+    
 }
 
+/* de styling van de nav balk */
 header {
     position: sticky;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #2C54B1;
+    background-color: var(--main-nav-color);
     top: 0;
     padding:  1em;
     z-index: 200;
@@ -48,7 +64,7 @@ article > aside{
     align-items: center;
     padding: 0 12px;
     line-height: 2.5em;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--grey);
     margin-top: 12px;
     font-size: .875em;
     font-weight: 600;
@@ -60,13 +76,13 @@ aside > div{
     align-items: center;
 }
 
+/* als je hb menu opent */
 header nav.open {
 	transform:translateY(0%);
-    transition: 0s;
+    transition: 0.25s;
 }
 
-
-
+/* hb menu verstopt en gestyled */
 .c-header__nav{
     position:fixed;
     width: 100%;
@@ -76,11 +92,11 @@ header nav.open {
 	bottom:0;
 	right:0;
     padding: 1em;
-    background-color: #2C54B1;
+    background-color: var(--main-nav-color);
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-	transform:translateY(-100%);
+	transform:translateY(-200%);
 	transition:.25s;
 }
 
@@ -93,7 +109,7 @@ header svg:first-of-type{
     vertical-align: middle;
     fill: #000000;
     overflow: hidden;
-    background: white;
+    background: var(--bg-color);
     border-radius: 100%;
 }
 
@@ -101,10 +117,6 @@ header svg:first-of-type{
     width: 2em;
     height: 2em;
 }
-
-
-
-
 
 
 
@@ -120,16 +132,6 @@ header svg:first-of-type{
 }
  
 
-/* .slider::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    background: linear-gradient(180deg,transparent 50%,rgb(var(--invertedBackground)) 90%);
-    pointer-events: none;
-} */
 
 .c-carousel__content{
     position: absolute;
@@ -144,7 +146,6 @@ header svg:first-of-type{
     padding-bottom: 8px;
     font-size: .75em;
     font-weight: 600;
-    /* line-height: 1.5em; */
     text-align: center;
     text-transform: uppercase;
     color: rgba(254,254,254,.6);
@@ -155,18 +156,20 @@ header svg:first-of-type{
     width: 1em;
 }
 
-section.c-tags > ul{
+
+
+div.c-tags > ul{
     padding: 12px;
     margin-top: 12px;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid var(--grey);
 }
 
-section.c-tags > ul > li{
+div.c-tags > ul > li{
     display: inline-block;
     margin: 0 4px 4px 0;
 }
 
-section.c-tags > ul > li > a{
+div.c-tags > ul > li > a{
     background-color: rgb(0,142,255);
     border: 1px solid rgb(0,142,255);
     text-decoration: none;
@@ -200,9 +203,6 @@ h4 {
 }
 
 
-.gridtest{
-    display: grid;
-}
 
 ul{
     list-style: none;
@@ -216,7 +216,7 @@ section.nieuws ul li{
     grid-template-rows: repeat(auto-fit,1.2rem);
     grid-template-columns: auto 1fr auto;
     padding: 0.75rem 12px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--grey);
 }
 
 section.nieuws ul li a{
@@ -247,6 +247,11 @@ section.nieuws h3{
     grid-auto-flow: row;
     align-items: center;
     text-align: center;
+}
+
+main img{
+    width: 100%;
+    filter: none;
 }
 
 .time{
@@ -316,19 +321,9 @@ header nav ul {
     
     
 
-    /* padding: 0;
-    margin: 0;
-    overflow-x: auto;
-    width: 100%; */
-
-
-/* header nav ul li { */
-    /* flex-shrink: 0; */
-/* } */
-
 header nav ul a {
     line-height: 2.5em;
-    color: #fefefe;
+    color:var(--vp-wit);
 }
 
 input {
@@ -342,7 +337,7 @@ input {
 }
 
 article > aside {
-    width: 50%;
+    width: 100%;
     margin: auto;
     margin-top: 1em;
 }
@@ -350,6 +345,10 @@ article > aside {
 
 
 /*slider*/
+
+.c-carousel article{
+    background: black;
+}
 
 .carousel-container {
 /*    position: relative;*/
@@ -370,9 +369,11 @@ article > aside {
 
 .c-carousel__slider {
     width: 100vw;
-    position: relative
+    position: relative;
+    filter: opacity(50%);
 }
 
+/* ID's voor gedrag en styling buttons */
 #prevBtn {
     color: #FFFFFF;
     background-color: #39207C;
@@ -395,22 +396,17 @@ article > aside {
     top: 16em;
 
 }
-
+/* styling titel artikel carousel */
 h2 {
-    /* background-color: ghostwhite; */
     margin: 8px 0;
     color: white;
 }
 
-
-
-.inverted{
-    color: #fefefe;
-}
-
+/* footer styling */
 
 footer{
-    background-color: #1a1a1f;
+    color: var(--vp-wit);
+    background-color: var(--footer);
     padding: 2.5em 0.75em;
 }
 
@@ -437,7 +433,7 @@ footer h3{
     letter-spacing: 2px;
     line-height: 2;
     opacity: .4;
-    color: #fefefe;
+    color: var(--vp-wit);
     text-transform: uppercase;
 }
 
@@ -467,19 +463,10 @@ footer a{
 footer h4{
     display: block;
     line-height: 4em;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--grey);
 }
 
-.part-of{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 0.75em;
-    align-items: center;
-    max-width: 100%;
-    flex-wrap: wrap;
-}
-
+/* De titel van het artikel */
 h1 {
     font-family: Oswald,Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -488,6 +475,7 @@ h1 {
     margin: 24px 12px 0;
 }
 
+/* styling voor eerste stukje vetgedrukt */
 article strong{
     display: block;
     margin-block-start: 1em;
@@ -501,6 +489,7 @@ article strong{
     color: #1a1a1f;
 }
 
+/* styling voor de tekst artikel */
 .detailpagina {
     margin-top: 1.6em;
     margin-left: .75em;
@@ -512,7 +501,18 @@ article strong{
 
 }
 
-@media only screen and (min-width: 768px) {
+main article, main section, .c-tags{
+    max-width: 90%;
+    margin: auto;
+}
+
+.c-carousel article{
+    max-width: 100%;
+
+}
+
+/* styling voor het responsive maken */
+@media only screen and (min-width: 800px) {
     /* For desktop: */
   .c-carousel{
 display: grid;
@@ -538,6 +538,31 @@ align-items: center;
     font-size: 2em;
   }
 
+  .c-carousel article a{
+    display: inline;
+  }
+
+  .c-carousel article a:focus{
+    background-color: #008eff;
+  }
+  aside + div{
+    display: none;
+}
+
+
+
  
 }
 
+
+@media (prefers-reduced-motion) {
+    /* styles to apply if a user's device settings are set to reduced motion */
+    .c-header__nav{
+        transition: 0s;
+    }
+
+    header nav.open {
+        transition: 0s;
+    }
+    
+  }

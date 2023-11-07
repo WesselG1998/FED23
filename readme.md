@@ -6,19 +6,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. Aangezien ik achter liep en dit vak graag wilde halen heb ik ruim 10 lesuren genomen bij Dar Sissau van super-prof.nl. Wij hebben samen de opdracht, toegankelijkheidstests en beoordelingsformulier doorgenomen en ik heb met zijn hulp de code geschreven.
+1. -bron 1-
 2. -bron 2-
 3. -...-
-
-Verslag toegankelijkheidstesten:
-
-Dar en ik hebben de WCAG test doorlopen en alles zoveel mogelijk aangepakt. Mijn website was al in een vergevorderd stadium, maar we kwamen erachter dat nog niet elke img en artikelen bereikbaar is met de tab. Bij de originele website was dit helemaal niet het geval. Op mijn website is het dus in ieder geval al beter. Tevens was het hamburger menuutje nog niet te bereiken. En in de inhoud wat hier instaat. Dit hebben we opgelost en aangepakt. Verder heb ik alle html code in de w3 validator gedaan en de foutmeldingen verholpen. Als het goed is, zijn er nu geen foutmeldingen meer. Qua kleurcontrast zat het best goed bij de website van voetbalprimeur. Ik heb de website echter zo goed mogelijk proberen na te maken. Over het carousel zit nu een zwart vlak met opacity zodat het nog beter leesbaar is. De screenreader test ben ik helaas niet aan toegekomen wegens tijdgebrek. 
 
 
 
 ## Eindgesprek (week 7/8)
 
-Wat goed ging is dat ik van Dar best veel geleerd heb. Ik heb veel geleerd hoe inspector toe te passen en hoe dit van waarde kan zijn tijdens het programmeren. Verder denk ik stappen gemaakt te hebben in het positioneren. FlexFroggy en GridGarden veel gespeeld. Ik ben ook tevreden over het eindresultaat. De website lijkt aardig op het origineel. Waar ik minder tevreden over ben is het proces. Wegens prive omstandigheden heb ik de lessen niet kunnen volgen, dus ook geen voortgang kunnen bespreken etc. Dit had ik uiteraard wel gewild. Aangezien ik nogal moeite had met coderen staan er naar mijn mening nog teveel classes in. Soms noodzakelijk, soms vond ik het later te lastig ze om te zetten naar selectoren. Een aantal heb ik wel al omgezet.
+-dit ging goed & dit was lastig-
 
 **Screenshot(s):**
 
@@ -50,7 +46,13 @@ Wat goed ging is dat ik van Dar best veel geleerd heb. Ik heb veel geleerd hoe i
 
 ### Agenda voor meeting
 
+-samen met je groepje opstellen-
 
+| Wessel         | Nick               | Redouane     | Ugur             |
+| ---            | ---                | ---          | ---              |
+| slideshow      | nav sticky         | vragen vooraf| afwezig          |
+| meer results   | code semantiek     | nog een punt |                  |
+| ...            | hb menu uitklappen | ...          | ...              |
 
 ### Verslag van meeting
 
