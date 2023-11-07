@@ -46,13 +46,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
 
-| Wessel         | Nick               | Redouane     | Ugur             |
-| ---            | ---                | ---          | ---              |
-| slideshow      | nav sticky         | vragen vooraf| afwezig          |
-| meer results   | code semantiek     | nog een punt |                  |
-| ...            | hb menu uitklappen | ...          | ...              |
 
 ### Verslag van meeting
 
